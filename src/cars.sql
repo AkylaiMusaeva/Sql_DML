@@ -1,3 +1,4 @@
+--LmsTask(console1)
 --1 Display only car’s brands & car’s models & car’s price
 select brand,model,price from cars;
 --2 Display quantity of all cars
@@ -41,3 +42,4 @@ select * from cars where color=(select color from cars
                                 order by count(color)desc limit 1);
 
 select color,count(color) from cars group by color order by count(color) desc limit 1;
+select brand,length(brand) from cars group by brand;
